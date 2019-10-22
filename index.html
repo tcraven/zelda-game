@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>tcraven.org</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css"/> 
+    <style type="text/css">
+        body {
+            text-align:center;
+            font-family:"nta",sans-serif;
+            font-weight:400;
+            font-size:28px;
+        }
+        .columns {
+            -webkit-column-count:2;
+            -webkit-column-gap: 40px;
+            text-align:justify;
+            width: 940px;
+            margin: 0px auto;
+        }
+        .columns>p:first {
+            margin-top:0px;
+        }
+        .title {
+            font-size:50px;
+            margin:0px auto 10px auto;
+        }
+        .container {
+            position:relative;
+            margin:0px auto;
+            width:840px;
+        }
+        .ts-canvas {
+            position:absolute;
+            left:0px;
+            top:0px;
+            border:solid 1px #000;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">tcraven.org</h1>
+    <!-- <div class="columns">
+        <p>
+            The quick brown fox jumped over the lazy dog. Once upon a time, there was
+            a frog named Martin. He lived at the edge of a lilly pond under a pile
+            of rocks.
+        </p>
+        <p>
+            One day, Martin the frog was out swimming when he stumbled upon a cache
+            of jewels hidden among the weeds at the bottom of the pond.
+        </p>
+        <p>
+            Being more knowledgeable about mud and insects than precious stones,
+            Martin wasn't quite sure what to make of his find. He resolved to bring
+            the jewels to his good friend Geraldine the magpie, who he remembered
+            had a fondness for shiny items.
+        </p>
+    </div> -->
+    <div class="container">
+        <canvas id="canvas_bg" width="820" height="660" class="ts-canvas"></canvas>
+        <canvas id="canvas_fg" width="820" height="660" class="ts-canvas"></canvas>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    
+</body>
